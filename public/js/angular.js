@@ -5,7 +5,7 @@ app.controller('BaseController', ['$http', function($http) {
     this.waterInfo = [];
     var _this = this;
 
-    $http.get('data/waterbill.json')
+    $http.get('/data/waterbill.json')
       .success(function(data){
         console.log(data);
         _this.waterInfo = data;
@@ -20,3 +20,16 @@ app.controller('BaseController', ['$http', function($http) {
     this.reverse = false;
     this.population = "";
     this.waterBill = "";
+
+    // Sorting function
+              this.setSort = function(colNam) {
+
+                if (this.sort === colNam) {
+                  this.reverse = !this.reverse;
+                }
+
+                this.sort = colNam;
+
+              };
+
+              }]);

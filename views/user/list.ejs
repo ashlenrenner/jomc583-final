@@ -12,12 +12,12 @@
       <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" type="text/css" />
 
 <!-- Angular -->
-      <script src="../libs/angular.min.js"></script>
+      <script src="/js/angular.min.js"></script>
 
 <!-- Scripts -->
-      <script src="../libs/angular.js"></script>
-      <script src="data/waterbill.json"></script>
-      <script src="data/waterUse.json"></script>
+      <script src="/js/angular.js"></script>
+      <script src="/data/waterbill.json"></script>
+      <script src="/data/waterUse.json"></script>
       <script src="http://d3js.org/d3.v3.min.js"></script>
       <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
       <script src="/js/map.js"></script>
@@ -28,6 +28,7 @@
         <title>EFC Dashboard</title>
     </head>
     <body ng-app="myApp">
+      <div class="container">
         <h3>UNC Environment Finance Center</h3>
 
         <!-- map -->
@@ -56,6 +57,8 @@
               </tbody>
             </table>
           </div>
+
+        </div> <!--container-->
 
     </body>
 </html>
