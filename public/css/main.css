@@ -46,3 +46,16 @@
   top: 100%;
   left: 0;
 }
+
+/*Map*/
+#container {
+    height: 500px;
+    min-width: 310px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}

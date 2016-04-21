@@ -20,11 +20,18 @@
       <script src="data/waterUse.json"></script>
       <script src="http://d3js.org/d3.v3.min.js"></script>
       <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+      <script src="/js/map.js"></script>
+      <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+      <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+      <script src="https://code.highcharts.com/mapdata/countries/us/us-nc-all.js"></script>
 
         <title>EFC Dashboard</title>
     </head>
     <body ng-app="myApp">
         <h3>UNC Environment Finance Center</h3>
+
+        <!-- map -->
+        <div id="container"></div>
 
         <!-- D3 Bar Chart -->
         <div id="barChart"></div>
