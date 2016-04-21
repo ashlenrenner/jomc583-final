@@ -1,7 +1,9 @@
 var app = angular.module('myApp', []);
 
+
 app.controller('BaseController', ['$http', function($http) {
-    //ajax request from data.json
+
+    //ajax request from waterbill.json
     this.waterInfo = [];
     var _this = this;
 

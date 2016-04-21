@@ -28,7 +28,7 @@
         <title>EFC Dashboard</title>
     </head>
     <body ng-app="myApp">
-      <div class="container">
+      <div class="container" ng-controller="BaseController as base">
         <h3>UNC Environment Finance Center</h3>
 
         <!-- map -->
@@ -52,7 +52,6 @@
                      <td ng-click="base.waterInfo(data.city)"><a href="#"> {{ data.city }}</a></td>
                     <td class="table-body">{{ data.population}}</td>
                     <td class="table-body">{{ data.waterBill }}</td>
-
                   </tr>
               </tbody>
             </table>
