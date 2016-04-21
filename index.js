@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
-app.get('/users', user.list); //list page
+app.get('/dashboard', user.list); //main page
 
 //mongodb function (add if I have time at the end)
 db.connect('mongodb://localhost:27017/test', function(err) {
