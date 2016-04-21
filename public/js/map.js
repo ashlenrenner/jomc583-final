@@ -1,4 +1,4 @@
-$(function () {
+$(function callMap() {
 
     // Prepare demo data
     var data = [
@@ -400,7 +400,7 @@ $(function () {
         },
         {
             "hc-key": "us-nc-167",
-            "value": 99
+            "value": 9.53
         }
     ];
 
