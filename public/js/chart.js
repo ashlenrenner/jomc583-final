@@ -26,8 +26,7 @@ var tip = d3.tip()
   .offset([-10, 0])
   .html(function(d) {
     return "<strong>MGD:</strong> <span style='color:red'>" + d.mgd + "</span>";
-  })
-
+  });
 
 var svg = d3.select("#barChart").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -36,9 +35,10 @@ var svg = d3.select("#barChart").append("svg")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 svg.call(tip);
+//This causes an error "d3.tip.v0.6.3.js:225 Uncaught TypeError: Cannot read property 'tagName' of null" that could not be resolved,
+//but doesn't affect the functionality of the app
 
-
-d3.json("wateruse.json", type, function(error, data) {
+d3.json("/data/waterUse.json", function(error, data) {
   x.domain(data.map(function(d) { return d.county; }));
   y.domain([0, d3.max(data, function(d) { return d.mgd; })]);
 
