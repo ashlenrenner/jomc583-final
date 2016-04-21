@@ -408,11 +408,11 @@ $(function callMap() {
     $('#container').highcharts('Map', {
 
         title : {
-            text : 'Highmaps basic demo'
+            text : 'Water Consumption in North Carolina'
         },
 
         subtitle : {
-            text : 'Source map: <a href="https://code.highcharts.com/mapdata/countries/us/us-nc-all.js">North Carolina</a>'
+            text : 'Measured in millions of gallons per day'
         },
 
         mapNavigation: {
@@ -430,7 +430,7 @@ $(function callMap() {
             data : data,
             mapData: Highcharts.maps['countries/us/us-nc-all'],
             joinBy: 'hc-key',
-            name: 'Random data',
+            name: 'MG/d',
             states: {
                 hover: {
                     color: '#BADA55'
