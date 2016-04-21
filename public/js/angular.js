@@ -9,7 +9,7 @@ app.controller('BaseController', ['$http', function($http) {
 
     $http.get('/data/waterbill.json')
       .success(function(data){
-        console.log(data);
+      //  console.log(data);
         _this.waterInfo = data;
       })
       .error(function(msg){

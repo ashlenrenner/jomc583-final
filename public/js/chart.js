@@ -2,7 +2,8 @@ var margin = {top: 40, right: 20, bottom: 30, left: 40},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
-var formatPercent = d3.format(".0%");
+
+//var formatPercent = d3.format(".0%");
 
 var x = d3.scale.ordinal()
     .rangeRoundBands([0, width], .1);
@@ -17,7 +18,8 @@ var xAxis = d3.svg.axis()
 var yAxis = d3.svg.axis()
     .scale(y)
     .orient("left")
-    .tickFormat(formatPercent);
+    //.tickFormat(formatPercent);
+
 
 var tip = d3.tip()
   .attr('class', 'd3-tip')
@@ -26,13 +28,15 @@ var tip = d3.tip()
     return "<strong>MGD:</strong> <span style='color:red'>" + d.mgd + "</span>";
   })
 
-var svg = d3.select("body").append("svg")
+
+var svg = d3.select("#barChart").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 svg.call(tip);
+
 
 d3.json("wateruse.json", type, function(error, data) {
   x.domain(data.map(function(d) { return d.county; }));
