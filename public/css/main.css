@@ -7,6 +7,10 @@
   padding: 5px;
 
 }
+.heading{
+  text-align: center;
+  margin: 20px;
+}
 
 /*Map*/
 #container {

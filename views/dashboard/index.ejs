@@ -43,12 +43,21 @@
           </div>
         </nav>
       <div class="container" ng-controller="BaseController as base">
-        <h3>UNC Environment Finance Center</h3>
+        <div class="col-md-12 center-block">
+        <h1 class="heading">A Drop in the Bucket</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum ut massa id pellentesque. Sed ullamcorper eu orci a pulvinar. Nunc maximus nibh ac orci aliquet cursus. Cras faucibus risus quis condimentum tempor.
+        </p>
+          <hr>
+      </div>
+
 
 
         <!-- map -->
         <div class="row">
           <div class="col-md-12 col-sm-12">
+            <h2 class="heading">Water Consumption in North Carolina</h2>
+            <p>This map shows the millions of gallons of water each N.C. county uses per day.</p>
             <div id="container"></div>
           </div>
         </div>
@@ -69,14 +78,27 @@
 
         <!--liquid graphic-->
         <div class="row">
-        <div class="col-md-4 col-sm-12 ">
+        <div class="col-md-4 col-sm-12">
           <svg id="fillgauge1" width="97%" height="250" onclick="gauge1.update(NewValue());"></svg>
         </div>
-        <div class="col-md"
+        <div class="col-md-8 col-sm-12 pull-right">
+          <h2>Title of Paragraph</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt aliquam mi, a malesuada turpis laoreet at. Pellentesque sagittis urna mi, nec gravida ligula consequat ut. Nam eu purus nec justo commodo iaculis nec sed urna. Etiam lobortis varius metus quis dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi commodo ligula in libero viverra, eu aliquet nisi auctor. Aliquam nec tortor lectus. Vivamus bibendum, velit nec egestas suscipit, felis sapien vestibulum urna, eu tincidunt nunc libero nec orci. Praesent fringilla elementum ligula, sit amet pretium orci viverra quis. Phasellus vitae nisi fringilla, sodales magna ut, iaculis sapien. Nulla in hendrerit neque. Nam vitae sem augue.
+          </p>
+        </div>
+      </div>
+      <hr>
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <h3> Search for your city</h3>
+        <p>Type in your city or county in the search box below to see water bill rate.</p>
+        </div>
       </div>
 
+
     <!-- Search -->
-      <div class="row">
+          <div class="row">
             <div class="col-md-4 col-sm-4">
               <div class="form-group form-value">
               <input type="text" ng-model="searchTerm" class="form-input" placeholder="Search" />
