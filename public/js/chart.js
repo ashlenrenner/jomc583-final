@@ -25,7 +25,7 @@ var tip = d3.tip()
   .attr('class', 'd3-tip')
   .offset([-10, 0])
   .html(function(d) {
-    return d.county + "<br><strong>MGD:</strong> <span style='color:red'>" + d.mgd + "</span>";
+    return d.county + "<br><strong>MGD:</strong> <span style='color:#6abee1'>" + d.mgd + "</span>";
 
   });
 
@@ -85,7 +85,7 @@ var gauge1 = loadLiquidFillGauge("fillgauge1", 55);
     config1.waveColor = "#FFDDDD";
     config1.circleThickness = 0.2;
     config1.textVertPosition = 0.2;
-    config1.waveAnimateTime = 3000;
+    config1.waveAnimateTime = 5000;
 
     function NewValue(){
        if(Math.random() > .5){

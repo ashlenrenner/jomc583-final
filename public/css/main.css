@@ -8,10 +8,19 @@
 
 }
 
-/*liquid fill graph*/
- .liquidFillGaugeText {
-   font-family: Helvetica; font-weight: bold;
- }
+/*Map*/
+#container {
+    height: 500px;
+    min-width: 310px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}
+
 
 /*Bar Graph */
 .axis path,
@@ -22,11 +31,11 @@
 }
 
 .bar {
-  fill: orange;
+  fill: #205589;
 }
 
 .bar:hover {
-  fill: orangered ;
+  fill: #5ca7c7;
 }
 
 .x.axis path {
@@ -37,8 +46,8 @@
   line-height: 1;
   font-weight: bold;
   padding: 12px;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  color: #f4f6f7;
   border-radius: 2px;
 }
 
@@ -62,18 +71,10 @@
   left: 0;
 }
 
-/*Map*/
-#container {
-    height: 500px;
-    min-width: 310px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-.loading {
-    margin-top: 10em;
-    text-align: center;
-    color: gray;
-}
+/*liquid fill graph*/
+ .liquidFillGaugeText {
+   font-family: Helvetica; font-weight: bold;
+ }
 
 /*search box*/
 input{
