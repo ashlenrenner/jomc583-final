@@ -16,14 +16,16 @@
       <script src="/js/angular.js"></script>
 
 <!-- Scripts -->
+
   <!--Data-->
       <script src="/data/waterbill.json"></script>
       <script src="/data/waterUse.json"></script>
   <!--D3 charts-->
       <script src="http://d3js.org/d3.v3.min.js"></script>
+      <script src="/js/liquidFillGauge.js"></script>
       <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+      <script src="/js/main.js"></script>
       <script src="/js/chart.js"></script>
-      <script src="/js/liquidFillGauge.js" language="JavaScript"></script>
   <!--Map-->
       <script src="/js/map.js"></script>
       <script src="https://code.highcharts.com/maps/highmaps.js"></script>
@@ -46,7 +48,24 @@
 
         <!--liquid graphic-->
         <svg id="fillgauge1" width="97%" height="250" onclick="gauge1.update(NewValue());"></svg>
-
+        <!-- <script language="JavaScript">
+              var gauge1 = loadLiquidFillGauge("fillgauge1", 55);
+              var config1 = liquidFillGaugeDefaultSettings();
+              config1.circleColor = "#FF7777";
+              config1.textColor = "#FF4444";
+              config1.waveTextColor = "#FFAAAA";
+              config1.waveColor = "#FFDDDD";
+              config1.circleThickness = 0.2;
+              config1.textVertPosition = 0.2;
+              config1.waveAnimateTime = 1000;
+              function NewValue(){
+                  if(Math.random() > .5){
+                      return Math.round(Math.random()*100);
+                  } else {
+                      return (Math.random()*100).toFixed(1);
+                  }
+              }
+          </script> -->
         <!-- map -->
         <div id="container"></div>
 
