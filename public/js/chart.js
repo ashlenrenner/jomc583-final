@@ -94,3 +94,8 @@ var gauge1 = loadLiquidFillGauge("fillgauge1", 55);
            return (Math.random()*100).toFixed(1);
        }
    }
+
+   //table
+   $(document).ready(function() {
+    $('#table').DataTable();
+} );

@@ -1,3 +1,14 @@
+p{
+  font-family: 'Actor', sans-serif;
+  font-size: 110%;
+}
+h1, h2, h3, h4{
+  font-family: 'Raleway', sans-serif!important;
+
+}
+.heading {
+  font-family: 'Raleway', sans-serif;
+}
 /*navbar*/
 .logo{
   margin-left: 2%;
@@ -89,7 +100,7 @@ input{
 }
 input:focus{
   outline: none !important;
-  border-color: #33cc66 !important;
+  border-color: #2498f4 !important;
   box-shadow: none !important;
   border-width: 1px !important;
   border-radius: 5px !important;

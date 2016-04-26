@@ -408,15 +408,16 @@ $(function callMap() {
     $('#container').highcharts('Map', {
 
         title : {
-            text : 'Water Consumption in North Carolina'
+            // text : 'Water Consumption in North Carolina'
+            text: false
         },
 
         subtitle : {
-            text : 'Measured in millions of gallons per day'
+            text : false
         },
 
         mapNavigation: {
-            enabled: true,
+            enabled: false,
             buttonOptions: {
                 verticalAlign: 'bottom'
             }
@@ -433,7 +434,7 @@ $(function callMap() {
             name: 'MG/d',
             states: {
                 hover: {
-                    color: '#BADA55'
+                    color: '#2c374b'
                 }
             },
             dataLabels: {
