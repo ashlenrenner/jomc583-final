@@ -95,7 +95,4 @@ var gauge1 = loadLiquidFillGauge("fillgauge1", 55);
        }
    }
 
-   //table
-   $(document).ready(function() {
-    $('#table').DataTable();
-} );
+   
