@@ -114,14 +114,14 @@
             <table  id="table" class="table table-striped table-hover" >
               <thead>
                 <tr>
-                    <th ng-click = "base.setSort('city')"><a href="#" class="table-head"> City </a></th>
-                    <th ng-click = "base.setSort('population')"><a href="#" class="table-head">Population</a></th>
-                    <th ng-click = "base.setSort('waterBill')"><a href="#" class="table-head">Water Bill</a></th>
+                    <th ng-click = "base.setSort('city')"><a href="#!" class="table-head"> City </a></th>
+                    <th ng-click = "base.setSort('population')"><a href="#!" class="table-head">Population</a></th>
+                    <th ng-click = "base.setSort('waterBill')"><a href="#!" class="table-head">Water Bill</a></th>
                 </tr>
               </thead>
-              <tbody ng-repeat= "data in base.waterInfo | orderBy:base.sort:base.reverse | filter:searchTerm">
+              <tbody ng-repeat= "data in base.waterInfo | orderBy:base.sort:base.reverse | filter:searchTerm" class="repeated-item">
                   <tr>
-                     <td ng-click="base.waterInfo(data.city)"><a href="#"> {{ data.city }}</a></td>
+                     <td ng-click="base.waterInfo(data.city)"><a href="#!"> {{ data.city }}</a></td>
                     <td class="table-body">{{ data.population}}</td>
                     <td class="table-body">{{ data.waterBill }}</td>
                   </tr>
