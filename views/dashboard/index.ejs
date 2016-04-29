@@ -57,6 +57,7 @@
           <div class="col-md-12 ">
             <h3>Water Consumption in North Carolina</h3>
             <p>This map shows the millions of gallons of water each N.C. county uses per day.</p>
+            <p><a target="_blank" href="http://nc.water.usgs.gov/infodata/wateruse.html">Source</a></p>
             <div id="container"></div>
           </div>
         </div>
@@ -69,6 +70,7 @@
             <p>
               Mecklenburg county, home of Charlotte, uses the most water in North Carolina. With a population of more than 796,209, Charlotte has the largest water system in the state.
             </p>
+            <p><a target="_blank" href="http://nc.water.usgs.gov/infodata/wateruse.html">Source</a></p>
           </div>
           <div class="col-md-8 col-sm-12">
             <div id="barChart"></div>
@@ -86,7 +88,7 @@
           <p>
             Eighty-seven percent of people in the U.S. with water service receive it from publicly-owned water utilities, and that number is growing. Private, for-profit corporations charge an average of 59 percent more per year than local governments do, leaving those private customers paying an extra $185 per year more, on average, than customers of systems owned and operated by a local government.
           </p>
-          <a href="http://cwfnc.org/"><p>Source</p></a>
+          <a target="_blank" href="http://cwfnc.org/"><p>Source</p></a>
         </div>
       </div>
       <hr>
@@ -95,6 +97,8 @@
       <div class="col-md-12 col-sm-12">
         <h2> Search for your city</h2>
         <p>Type in your city or county in the search box below to see water bill rate.</p>
+        <p><small>*Water bill prices are based on a 5,000-gallon rate. Population measured in thousands.</small></p>
+        <p><a href="http://www.efc.sog.unc.edu/reslib/item/tables-water-and-wastewater-rates-and-rate-structures-north-carolina-january-2016" target="_blank">Source</a></p>
         </div>
       </div>
 
@@ -114,14 +118,14 @@
             <table  id="table" class="table table-striped table-hover" >
               <thead>
                 <tr>
-                    <th ng-click = "base.setSort('city')"><a href="#!" class="table-head"> City </a></th>
+                    <th ng-click = "base.setSort('city')"><a href="#!" id="fade" class="table-head"> City </a></th>
                     <th ng-click = "base.setSort('population')"><a href="#!" class="table-head">Population</a></th>
                     <th ng-click = "base.setSort('waterBill')"><a href="#!" class="table-head">Water Bill</a></th>
                 </tr>
               </thead>
-              <tbody ng-repeat= "data in base.waterInfo | orderBy:base.sort:base.reverse | filter:searchTerm" class="repeated-item">
+              <tbody ng-repeat= "data in base.waterInfo | orderBy:base.sort:base.reverse | filter:searchTerm">
                   <tr>
-                     <td ng-click="base.waterInfo(data.city)"><a href="#!"> {{ data.city }}</a></td>
+                     <td class="table-body"> {{ data.city }}</td>
                     <td class="table-body">{{ data.population}}</td>
                     <td class="table-body">{{ data.waterBill }}</td>
                   </tr>
@@ -140,5 +144,8 @@
         <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js"></script>
   </body>
-  <p class="footer"><small>This is a project produced by Ashlen Renner for a Journalism course at UNC Chapel Hill</small></p>
+  <div class="footerWrapper">
+    <p class="footer"><small>This is a project produced by Ashlen Renner for a Journalism course at UNC Chapel Hill</small></p>
+    <p class="footer"><small>Data from the <a href="http://www.efc.sog.unc.edu/programs/drinking-water-and-wastewater" target="_blank">UNC Environmental Finance Center</a> and the <a href="http://nc.water.usgs.gov/infodata/wateruse.html">USGS</a></small></p>
+  </div>
 </html>
