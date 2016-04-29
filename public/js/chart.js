@@ -77,22 +77,21 @@ function type(d) {
 }
 
 //liquidGraph
-var gauge1 = loadLiquidFillGauge("fillgauge1", 55);
+var gauge1 = loadLiquidFillGauge("fillgauge1", 87);
     var config1 = liquidFillGaugeDefaultSettings();
     config1.circleColor = "#FF7777";
-    config1.textColor = "#FF4444";
+    config1.textColor = "#2c374b";
     config1.waveTextColor = "#FFAAAA";
-    config1.waveColor = "#FFDDDD";
+    config1.waveColor = "#5ca7c7";
     config1.circleThickness = 0.2;
     config1.textVertPosition = 0.2;
     config1.waveAnimateTime = 5000;
 
-    function NewValue(){
-       if(Math.random() > .5){
-           return Math.round(Math.random()*100);
-       } else {
-           return (Math.random()*100).toFixed(1);
-       }
+    function clickValue(){
+      //  if(Math.random() > .5){
+      //      return Math.round(Math.random()*100);
+      //  } else {
+      //      return (Math.random()*100).toFixed(1);
+      //  }
+    //  loadLiquidFillGauge("fillgauge1", 57);
    }
-
-   
