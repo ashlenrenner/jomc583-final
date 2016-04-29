@@ -36,16 +36,4 @@ app.controller('BaseController', ['$http', function($http) {
 
               }]);
 
-      //table
-      angular.module('base.withAjax', ['datatables']).controller('WithAjaxCtrl', WithAjaxCtrl);
-
-    function WithAjaxCtrl(DTOptionsBuilder, DTColumnBuilder) {
-        var vm = this;
-        vm.dtOptions = DTOptionsBuilder.fromSource('/data/waterbill.json')
-            .withPaginationType('full_numbers');
-        vm.dtColumns = [
-            DTColumnBuilder.newColumn('city').withTitle('City'),
-            DTColumnBuilder.newColumn('population').withTitle('Population'),
-            DTColumnBuilder.newColumn('waterBill').withTitle('Bill').notVisible()
-        ];
-    }
+  //table

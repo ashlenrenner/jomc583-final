@@ -424,7 +424,9 @@ $(function callMap() {
         },
 
         colorAxis: {
-            min: 0
+            min: 0,
+            minColor: '#f4f7f9',
+            maxColor: '#205589'
         },
 
         series : [{
@@ -436,6 +438,7 @@ $(function callMap() {
                 hover: {
                     color: '#2c374b'
                 }
+
             },
             dataLabels: {
                 enabled: true,

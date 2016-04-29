@@ -11,10 +11,17 @@ h1, h2, h3, h4{
 }
 /*navbar*/
 .logo{
-  margin-left: 2%;
+  max-height: 70px;
+}
+.navbar-brand{
+  margin-top: 10px;
+  font-family: 'Raleway';
+  font-weight: bold;
+  color: #2c374b  !important;
+  font-size: 160% !important;
 }
 .navbar-default{
-  background-color: #5ca7c7 !important;
+  background-color: #f4f7f9   !important;
   padding: 5px;
 
 }
