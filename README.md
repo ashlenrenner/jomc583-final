@@ -1,4 +1,5 @@
 # jomc583-final
+This is a interactive data dashboard about North Carolina water. Data was taken from the UNC Environmental Financial Center and the USGS. This project was made with node, angular.js, and d3.
 
 To install:
 
