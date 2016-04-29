@@ -46,7 +46,7 @@ d3.json("/data/waterUse.json", function(error, data) {
   svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
-    //  .call(xAxis);
+      
 
   svg.append("g")
       .attr("class", "y axis")
@@ -56,7 +56,7 @@ d3.json("/data/waterUse.json", function(error, data) {
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("MG/D");
+      .text("Millions of Gallons/Day");
 
   svg.selectAll(".bar")
       .data(data)

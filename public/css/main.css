@@ -1,3 +1,6 @@
+html{
+  background-color: #f8f8f8;
+}
 p{
   font-family: 'Actor', sans-serif;
   font-size: 110%;
@@ -126,4 +129,8 @@ input:focus{
 /*Table*/
 table{
   margin-top: 25px;
+}
+.footer{
+  margin-top: 50px;
+  margin-left: 30px;
 }
